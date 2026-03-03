@@ -1,184 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Miss T's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tejasree | Portfolio</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #f8f9fc;
-            color: #1f2937;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-        header {
-            background: linear-gradient(135deg, #1e3a8a, #4f46e5);
-            color: white;
-            padding: 70px 20px;
-            text-align: center;
-        }
+body {
+    background: #0f172a;
+    color: white;
+}
 
-        header img {
-            width: 170px;
-            height: 170px;
-            border-radius: 50%;
-            border: 4px solid #e0e7ff;
-            margin-bottom: 20px;
-            object-fit: cover;
-        }
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #0b1224;
+}
 
-        h1 {
-            margin: 10px 0;
-            font-size: 34px;
-        }
+nav h2 {
+    color: white;
+}
 
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 60px 20px;
-        }
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
 
-        h2 {
-            color: #4338ca;
-            font-size: 24px;
-            margin-bottom: 20px;
-            position: relative;
-        }
+nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-        h2::after {
-            content: "";
-            width: 60px;
-            height: 3px;
-            background: #6366f1;
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-        }
+nav ul li:hover {
+    color: #22d3ee;
+}
 
-        p {
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-        ul {
-            line-height: 1.8;
-            padding-left: 20px;
-        }
+    background: radial-gradient(circle at center, #1e293b, #0f172a);
+}
 
-        .section-divider {
-            margin: 50px 0;
-            height: 1px;
-            background: #e5e7eb;
-        }
+.hero img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #22d3ee;
+    margin-bottom: 20px;
+}
 
-        footer {
-            background: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 60px;
-        }
-    </style>
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero span {
+    background: linear-gradient(to right, #22d3ee, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #22d3ee;
+    color: black;
+}
+
+.secondary {
+    background: transparent;
+    border: 2px solid #22d3ee;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SECTION */
+section {
+    padding: 80px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b1224;
+    color: #94a3b8;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <img src="profile.jpg" alt="Tejasree R">
-    <h1>Tejasree R</h1>
-    <p>B.Tech | Artificial Intelligence & Data Science</p>
-</header>
+<nav>
+    <h2>TS.</h2>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Projects</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <img src="profile.jpg" alt="Profile">
+    <h1>Hi, I'm <span>Tejasree</span></h1>
+    <p>AI & Data Science Student focused on Machine Learning and Big Data.</p>
+
+    <div class="buttons">
+        <button class="btn primary">View Work</button>
+        <button class="btn secondary">Contact Me</button>
+    </div>
+</div>
 
 <section>
-
     <h2>About Me</h2>
-    <p>
-    I am a B.Tech student specializing in Artificial Intelligence and Data Science with a deep-rooted passion for teaching and knowledge sharing. Alongside my academic journey, I actively contribute to a students’ organization committed to promoting a scientific, secular, and democratic education system while addressing student issues responsibly.
-    </p>
-    <p>
-    As a passionate singer and public performer, I have developed strong communication skills, stage confidence, and the ability to connect with diverse audiences — strengths that shape both my academic growth and leadership journey.
-    </p>
-
-    <div class="section-divider"></div>
-
-    <h2>Education</h2>
-    <p><strong>B.Tech in Artificial Intelligence & Data Science</strong></p>
-    <p>Annamacharya Institute of Technology and Sciences, Tirupati</p>
-    <p>Expected Graduation: 2027</p>
-
-    <div class="section-divider"></div>
-
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>Python Programming</li>
-        <li>HTML & CSS</li>
-        <li>Machine Learning Fundamentals</li>
-        <li>Data Analysis using Pandas & NumPy</li>
-        <li>Git & GitHub</li>
-    </ul>
-
-    <div class="section-divider"></div>
-
-    <h2>Projects</h2>
-    <ul>
-        <li><strong>College Information Website</strong> – Developed a structured website using HTML and CSS.</li>
-        <li><strong>Sales Data Analysis</strong> – Performed data cleaning and visualization using Python.</li>
-        <li><strong>Basic Machine Learning Model</strong> – Implemented a supervised learning model for prediction.</li>
-    </ul>
-
-    <div class="section-divider"></div>
-
-    <h2>Research Interests</h2>
-    <ul>
-        <li>Machine Learning & Artificial Intelligence</li>
-        <li>AI in Education</li>
-        <li>Data-Driven Decision Systems</li>
-        <li>Ethical & Responsible AI</li>
-    </ul>
-
-    <div class="section-divider"></div>
-
-    <h2>Experience & Leadership</h2>
-    <ul>
-        <li>Active member of a students’ organization promoting scientific and democratic education.</li>
-        <li>Engaged in academic discussions and student advocacy initiatives.</li>
-    </ul>
-
-    <div class="section-divider"></div>
-
-    <h2>Teaching & Mentoring</h2>
-    <ul>
-        <li>Peer mentoring in academic subjects and programming fundamentals.</li>
-        <li>Guided classmates in understanding core technical concepts.</li>
-    </ul>
-
-    <div class="section-divider"></div>
-
-    <h2>Achievements & Certifications</h2>
-    <ul>
-        <li>Python Programming Certification</li>
-        <li>Participation in technical workshops and seminars</li>
-    </ul>
-
-    <div class="section-divider"></div>
-
-    <h2>Extracurricular Activities</h2>
-    <ul>
-        <li>Passionate Singer & Stage Performer</li>
-        <li>Active participation in cultural and organizational events</li>
-    </ul>
-
-    <div class="section-divider"></div>
-
-    <h2>Contact Information</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: https://github.com/yourusername</p>
-    <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
-
+    <p>I am a B.Tech AI & DS student passionate about teaching and building intelligent systems.</p>
 </section>
 
 <footer>
-    © 2026 Miss T's Portfolio
+© 2026 Tejasree | Portfolio
 </footer>
 
 </body>
