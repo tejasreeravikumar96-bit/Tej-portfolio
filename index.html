@@ -3,152 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tejasree R | Portfolio</title>
+<title>Teju R | AI & Data Science</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI', sans-serif;
-    scroll-behavior:smooth;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-body{
-    background:#0f172a;
-    color:white;
+body {
+    background: #0f172a;
+    color: #e2e8f0;
+    scroll-behavior: smooth;
 }
 
-/* NAVBAR */
-nav{
-    position:fixed;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 80px;
-    background:#0b1224;
-    z-index:1000;
+/* Navbar */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
-nav h2{
-    color:white;
+nav h1 {
+    font-weight: 800;
+    color: #38bdf8;
 }
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:30px;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    transition:0.3s;
+nav ul li a {
+    text-decoration: none;
+    color: #cbd5e1;
+    transition: 0.3s;
 }
 
-nav ul li a:hover{
-    color:#22d3ee;
+nav ul li a:hover {
+    color: #38bdf8;
 }
 
-/* HERO SECTION */
-.hero{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background: radial-gradient(circle at center, #1e293b, #0f172a);
-    padding-top:80px;
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
 }
 
-.hero img{
-    width:170px;
-    height:170px;
-    border-radius:50%;
-    border:4px solid #22d3ee;
-    margin-bottom:20px;
-    object-fit:cover;
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 800;
 }
 
-.hero h1{
-    font-size:55px;
-    margin-bottom:15px;
+.hero span {
+    color: #38bdf8;
 }
 
-.hero span{
-    background:linear-gradient(to right,#22d3ee,#3b82f6);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+.hero p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #94a3b8;
 }
 
-.hero p{
-    color:#94a3b8;
-    margin-bottom:30px;
-    font-size:18px;
+/* Section */
+section {
+    padding: 100px 8%;
 }
 
-.buttons{
-    display:flex;
-    gap:20px;
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #38bdf8;
 }
 
-.btn{
-    padding:12px 25px;
-    border-radius:25px;
-    border:none;
-    cursor:pointer;
-    font-size:16px;
-    transition:0.3s;
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-.primary{
-    background:#22d3ee;
-    color:black;
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.4s;
 }
 
-.secondary{
-    background:transparent;
-    border:2px solid #22d3ee;
-    color:white;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
 }
 
-.btn:hover{
-    transform:scale(1.05);
+.card h3 {
+    margin-bottom: 10px;
+    color: #38bdf8;
 }
 
-/* SECTIONS */
-section{
-    padding:100px 80px;
+/* Contact */
+.contact a {
+    color: #38bdf8;
+    text-decoration: none;
 }
 
-section h2{
-    font-size:32px;
-    margin-bottom:30px;
-    color:#22d3ee;
-}
-
-section p, li{
-    color:#cbd5e1;
-    line-height:1.8;
-}
-
-ul{
-    padding-left:20px;
-}
-
-.divider{
-    height:1px;
-    background:#1e293b;
-    margin:50px 0;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#0b1224;
-    color:#94a3b8;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    margin-top: 50px;
+    color: #94a3b8;
 }
 </style>
 </head>
@@ -156,144 +138,135 @@ footer{
 <body>
 
 <nav>
-    <h2>TS.</h2>
+    <h1>Teju R</h1>
     <ul>
-        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Leadership</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<!-- HERO -->
-<div class="hero" id="home">
-    <img src="profile.jpg" alt="Tejasree R">
-    <h1>Hi, I'm <span>Tejasree R</span></h1>
-    <p>AI & Data Science Student focused on Machine Learning, Big Data & Responsible AI.</p>
-    <div class="buttons">
-        <button class="btn primary" onclick="location.href='#projects'">View Work</button>
-        <button class="btn secondary" onclick="location.href='#contact'">Contact Me</button>
+<div class="hero">
+    <div>
+        <h2>Hi, I'm <span>Teju R</span></h2>
+        <p>B.Tech AI & Data Science student passionate about Research, Teaching, Artificial Intelligence and building Scientific, Secular & Democratic Education Systems.</p>
     </div>
 </div>
 
-<!-- ABOUT -->
 <section id="about">
-    <h2>About Me</h2>
-    <p>
-    I am a B.Tech student specializing in Artificial Intelligence and Data Science with a deep-rooted passion for teaching and knowledge sharing.
-    Alongside my academic journey, I actively contribute to a students’ organization committed to building a scientific, secular, and democratic education system.
-    </p>
-    <p>
-    As a passionate singer and public performer, I have developed strong communication skills, stage confidence, and the ability to connect with diverse audiences — strengths that shape both my academic and leadership journey.
-    </p>
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        <p>
+        I am a 3rd-year B.Tech student specializing in Artificial Intelligence & Data Science.
+        Deeply passionate about teaching and research, I aspire to contribute to academia and innovation.
+        Alongside technology, I actively engage in social and educational initiatives that promote critical thinking and scientific values.
+        </p>
+    </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- EDUCATION -->
-<section>
-    <h2>Education</h2>
-    <p><strong>B.Tech in Artificial Intelligence & Data Science</strong></p>
-    <p>Annamacharya Institute of Technology and Sciences, Tirupati</p>
-    <p>Expected Graduation: 2027</p>
+<section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>B.Tech in AI & DS</h3>
+            <p>Your College Name</p>
+            <p>2022 – 2026</p>
+        </div>
+        <div class="card">
+            <h3>Intermediate</h3>
+            <p>Your School Name</p>
+        </div>
+    </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- SKILLS -->
 <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>Python Programming</li>
-        <li>HTML & CSS</li>
-        <li>Machine Learning Fundamentals</li>
-        <li>Data Analysis using Pandas & NumPy</li>
-        <li>Git & GitHub</li>
-    </ul>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Python, C, SQL</p>
+        </div>
+        <div class="card">
+            <h3>AI & ML</h3>
+            <p>Machine Learning, Deep Learning, NLP</p>
+        </div>
+        <div class="card">
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code, Jupyter</p>
+        </div>
+    </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- PROJECTS -->
 <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li><strong>College Information Website</strong> – Developed structured website using HTML & CSS.</li>
-        <li><strong>Sales Data Analysis</strong> – Performed data cleaning and visualization using Python.</li>
-        <li><strong>Machine Learning Model</strong> – Implemented supervised learning model for prediction.</li>
-    </ul>
+    <h2 class="section-title">Projects</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>AI-Based Prediction System</h3>
+            <p>Developed a machine learning model to predict outcomes using real-world datasets.</p>
+        </div>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Designed and deployed a responsive portfolio using Git & Vercel.</p>
+        </div>
+    </div>
 </section>
 
-<div class="divider"></div>
+<section id="experience">
+    <h2 class="section-title">Experience & Leadership</h2>
+    <div class="card">
+        <p>
+        • Led educational initiatives promoting scientific thinking.<br>
+        • Organized academic and social awareness programs.<br>
+        • Active member in student academic communities.
+        </p>
+    </div>
+</section>
 
-<!-- RESEARCH -->
 <section>
-    <h2>Research Interests</h2>
-    <ul>
-        <li>Machine Learning & Artificial Intelligence</li>
-        <li>AI in Education</li>
-        <li>Data-Driven Decision Systems</li>
-        <li>Ethical & Responsible AI</li>
-    </ul>
+    <h2 class="section-title">Teaching & Mentoring</h2>
+    <div class="card">
+        <p>
+        Conducted peer-learning sessions in AI & programming.
+        Mentored students in Python basics and project building.
+        </p>
+    </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- EXPERIENCE -->
 <section>
-    <h2>Experience & Leadership</h2>
-    <ul>
-        <li>Active member of students’ organization promoting scientific and democratic education.</li>
-        <li>Engaged in academic discussions and student advocacy initiatives.</li>
-    </ul>
+    <h2 class="section-title">Achievements & Certifications</h2>
+    <div class="card">
+        <p>
+        • Completed AI & ML certification courses.<br>
+        • Participated in hackathons and tech events.
+        </p>
+    </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- TEACHING -->
 <section>
-    <h2>Teaching & Mentoring</h2>
-    <ul>
-        <li>Peer mentoring in programming fundamentals.</li>
-        <li>Guided classmates in understanding core technical concepts.</li>
-    </ul>
+    <h2 class="section-title">Extracurricular Activities</h2>
+    <div class="card">
+        <p>
+        • Public speaking and academic discussions.<br>
+        • Singing and cultural participation.<br>
+        • Social activism & educational reform initiatives.
+        </p>
+    </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- ACHIEVEMENTS -->
-<section>
-    <h2>Achievements & Certifications</h2>
-    <ul>
-        <li>Python Programming Certification</li>
-        <li>Participation in technical workshops & seminars</li>
-    </ul>
-</section>
-
-<div class="divider"></div>
-
-<!-- EXTRACURRICULAR -->
-<section>
-    <h2>Extracurricular Activities</h2>
-    <ul>
-        <li>Passionate Singer & Stage Performer</li>
-        <li>Active participation in cultural and organizational events</li>
-    </ul>
-</section>
-
-<div class="divider"></div>
-
-<!-- CONTACT -->
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: https://github.com/yourusername</p>
-    <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
+    <h2 class="section-title">Contact Information</h2>
+    <div class="card contact">
+        <p>Email: yourmail@gmail.com</p>
+        <p>GitHub: <a href="#">github.com/yourprofile</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+    </div>
 </section>
 
 <footer>
-© 2026 Tejasree R | Portfolio
+    © 2026 Teju R | AI & Data Science Portfolio
 </footer>
 
 </body>
